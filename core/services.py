@@ -11,7 +11,7 @@ def get_model_instance_by_id(pk: int, model):
 
 
 def put_info_to_user_profile(user_id: int, data: dict):
-    serializer = serializers.SeatQuestSerializer(
+    serializer = serializers.CustomUserSerializer(
         get_model_instance_by_id(pk=user_id, model=models.CustomUser),
         data=data,
         partial=True
