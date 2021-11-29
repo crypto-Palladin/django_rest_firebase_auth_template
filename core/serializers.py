@@ -2,7 +2,7 @@ from rest_framework import serializers
 from . import models
 
 
-class SeatQuestSerializer(serializers.HyperlinkedModelSerializer):
+class CustomUserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.CustomUser
         fields = [
@@ -14,7 +14,7 @@ class SeatQuestSerializer(serializers.HyperlinkedModelSerializer):
         ]
 
 
-class SeatQuestListSerializer(serializers.HyperlinkedModelSerializer):
+class CustomUserListSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.CustomUser
         fields = [
